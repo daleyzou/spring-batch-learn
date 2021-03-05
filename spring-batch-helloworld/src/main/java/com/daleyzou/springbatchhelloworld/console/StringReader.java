@@ -26,6 +26,7 @@ public class StringReader implements ItemReader<String> {
         if (count < messages.length) {
             String message = messages[count];
             log.debug("StringReader read data : {}", message);
+            count++;
             return message;
         } else {
             count = 0;
